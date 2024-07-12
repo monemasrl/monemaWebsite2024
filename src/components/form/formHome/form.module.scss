@@ -1,0 +1,119 @@
+.success {
+  padding: 1rem;
+  background-color: $blue;
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+form.form {
+  input,
+  textarea,
+  textarea:focus-visible,
+  input:focus-visible {
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+    outline: none;
+  }
+  input {
+    height: 60px;
+  }
+  textarea {
+    height: 200px;
+  }
+  button {
+    border-radius: 0;
+    border: none;
+    padding: 1rem 2rem;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+  p {
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  .error {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+  }
+}
+.form__lavora {
+  select.candidatura {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+.form__heading {
+  margin: 1rem 0;
+  min-width: 550px;
+  p {
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+.wrapperForm {
+  width: 100%;
+  grid-column: span 3;
+  background-color: rgb(180 201 223);
+  padding: 1rem 2rem;
+  color: #000000;
+  border-radius: 20px;
+  margin: 6rem 0;
+}
+.lastSectionContatti {
+  position: relative;
+  height: 200vh;
+  margin: 2rem;
+  h2 {
+    font-size: 4rem;
+    color: $blue;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+  }
+  &__video {
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.2;
+    filter: invert(1) brightness(1.3) hue-rotate(267deg) blur(1px);
+  }
+  &__content {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &__video {
+      position: relative;
+      overflow: hidden;
+
+      height: 90vh;
+    }
+  }
+}

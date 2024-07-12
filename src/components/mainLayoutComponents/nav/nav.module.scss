@@ -1,0 +1,135 @@
+.header {
+  position: relative;
+  padding: 0 1rem;
+  z-index: 200;
+  &__home {
+    // background: linear-gradient(rgb(10, 43, 82) 7%, rgb(50 92 175 / 0%) 100%);
+    .mainNavBar {
+      padding-bottom: 5rem;
+      a {
+        color: $blue;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    .mainNavBar__navBlock__topData {
+      a {
+        color: $blue;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+.mainNavBar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1540px;
+  margin: 0 auto;
+  color: white;
+  font-size: $size-navbar;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  &__home {
+    ul li a {
+      color: white;
+    }
+  }
+  &__inner {
+    hr {
+      background-color: $navyBlue;
+    }
+    ul li a {
+      color: $navyBlue;
+    }
+    .mainNavBar__navBlock__topData {
+      color: $navyBlue;
+    }
+  }
+
+  &__navBlock {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    hr {
+      width: 100%;
+      border: rgba(255, 255, 255, 0.262) 1px solid;
+    }
+    &__topData {
+      text-transform: uppercase;
+      @media #{$landscape} {
+        display: none;
+      }
+    }
+    &__nav {
+      display: flex;
+      gap: 2rem;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        &:hover {
+          color: $navyBlue;
+        }
+      }
+      @media #{$landscape} {
+        display: none;
+      }
+    }
+  }
+}
+.burger {
+  display: none;
+  font-size: 1.5rem;
+  &__inner {
+    color: $navyBlue;
+  }
+  @media #{$landscape} {
+    display: block;
+  }
+}
+.navMobile {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  background-color: $blue;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+  flex-direction: column;
+  font-size: 1.5rem;
+  z-index: 100;
+  ul {
+    margin: 1rem 0;
+    text-align: center;
+    li {
+      margin: 0.4rem 0;
+    }
+  }
+  &__generic {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  .activeLink {
+    background-color: $navyBlue;
+    padding: 0rem 1rem 0.2rem 1rem;
+  }
+}
+.activeLink {
+  border-bottom: 1px solid $navyBlue;
+}

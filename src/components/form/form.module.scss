@@ -1,0 +1,66 @@
+.success {
+  padding: 1rem;
+  background-color: $darkblue;
+  margin-bottom: 2rem;
+  /* position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+  h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0.5rem;
+  }
+}
+
+form.form {
+  max-width: 1000px;
+  width: 100%;
+  grid-column: span 3;
+  background-color: $blue;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  color: white;
+  @media #{$phone} {
+    padding: 0rem;
+  }
+  input,
+  textarea,
+  textarea:focus-visible,
+  input:focus-visible {
+    width: 100%;
+    border: none;
+    background-color: rgb(239, 239, 239);
+    border-radius: 0;
+    outline: none;
+  }
+  input {
+    height: 40px;
+  }
+  textarea {
+    height: 100px;
+  }
+  button {
+    border-radius: 0;
+    border: none;
+    padding: 1rem 2rem;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+  p {
+    margin: 0.5rem 0;
+  }
+  .error {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+  }
+}

@@ -1,0 +1,42 @@
+.sectionSkills {
+  position: relative;
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  margin: 3rem auto;
+  align-items: flex-start;
+  max-width: 1300px;
+  @media #{$landscape} {
+    flex-direction: column;
+  }
+  &__single {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin: 1rem 0;
+    }
+    p {
+      padding: 0 2rem;
+      text-align: justify;
+    }
+    &:first-child {
+      grid-column: 4/6;
+    }
+    grid-column: span 2;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 200;
+      line-height: 1;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 200;
+      margin-top: 1rem;
+    }
+  }
+}

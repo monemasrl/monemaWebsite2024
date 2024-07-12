@@ -1,0 +1,108 @@
+{
+    "it": {
+        "metaHtml": {
+            "title": "simple website",
+            "description": "Lorem impsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum libero nec, ultrices nunc. Nulla facilisi. Nullam nec nunc nec nunc.",
+            "keywords": "keyword1, keyword2, keyword3",
+            "openGraph": {
+                "title": "simple website",
+                "description": "Lorem impsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum libero nec, ultrices nunc. Nulla facilisi. Nullam nec nunc nec nunc.",
+                "type": "website",
+                "locale": "it_IT",
+                "url": "https://test.it/",
+                "siteName": "simple website",
+                "images": [
+                    {
+                        "url": "/image/og-image.jpg",
+                        "width": 1200,
+                        "height": 630,
+                        "alt": "simple website"
+                    }
+                ]
+            }
+        },
+        "jsonld": {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "image": [
+                "https://test.it//image/4_3graph.jpg",
+                "https://test.it//image/mainimage.jpg"
+            ],
+            "name": "simple website",
+            "address": [
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": " via della stranezza 27 Mologno Barga",
+                    "addressLocality": "Lucca",
+                    "addressRegion": "Toscana",
+                    "postalCode": "55051",
+                    "addressCountry": "IT"
+                },
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "via della figata totale 27 Mologno Barga",
+                    "addressLocality": "liguria",
+                    "addressRegion": "Genova",
+                    "postalCode": "123213",
+                    "addressCountry": "GE"
+                }
+            ],
+            "url": "https://test.it/",
+            "telephone": "+320583711372",
+            "email": "info@test.it"
+        }
+    },
+    "en": {
+        "metaHtml": {
+            "title": "simple website",
+            "description": "Lorem impsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum libero nec, ultrices nunc. Nulla facilisi. Nullam nec nunc nec nunc.",
+            "keywords": "keyword1, keyword2, keyword3",
+            "openGraph": {
+                "title": "simple website",
+                "description": "Lorem impsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum libero nec, ultrices nunc. Nulla facilisi. Nullam nec nunc nec nunc.",
+                "type": "website",
+                "locale": "it_IT",
+                "url": "https://test.it/",
+                "siteName": "simple website",
+                "images": [
+                    {
+                        "url": "/image/og-image.jpg",
+                        "width": 1200,
+                        "height": 630,
+                        "alt": "simple website"
+                    }
+                ]
+            }
+        },
+        "jsonld": {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "image": [
+                "https://test.it//image/4_3graph.jpg",
+                "https://test.it//image/mainimage.jpg"
+            ],
+            "name": "simple website",
+            "address": [
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": " via della stranezza 27 Mologno Barga",
+                    "addressLocality": "Lucca",
+                    "addressRegion": "Toscana",
+                    "postalCode": "55051",
+                    "addressCountry": "IT"
+                },
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "via della figata totale 27 Mologno Barga",
+                    "addressLocality": "liguria",
+                    "addressRegion": "Genova",
+                    "postalCode": "123213",
+                    "addressCountry": "GE"
+                }
+            ],
+            "url": "https://test.it/",
+            "telephone": "+320583711372",
+            "email": "info@test.it"
+        }
+    }
+}

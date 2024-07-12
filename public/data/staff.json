@@ -1,0 +1,82 @@
+{
+    "it": [
+        {
+            "nome": "Tizio",
+            "cognome": "Strano",
+            "ruolo": "MasterBlaster",
+            "eta": 22,
+            "image": "/image/tizio.jpg",
+            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
+            "skills": [
+                "skill1",
+                "skill2",
+                "skill3",
+                "skill4",
+                "skill5",
+                "skill6",
+                "skill7",
+                "skill8"
+            ],
+            "cv": "test.pdf"
+        },
+        {
+            "nome": "Caio",
+            "cognome": "Frana",
+            "ruolo": "MasterBlaster",
+            "eta": 22,
+            "image": "/image/tizio.jpg",
+            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
+            "skills": [
+                "skill1",
+                "skill2",
+                "skill3",
+                "skill4",
+                "skill5",
+                "skill6",
+                "skill7",
+                "skill8"
+            ],
+            "cv": "test.pdf"
+        }
+    ],
+    "en": [
+        {
+            "nome": "Tizio",
+            "cognome": "Strano",
+            "ruolo": "MasterBlaster",
+            "eta": 22,
+            "image": "/image/tizio.jpg",
+            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
+            "skills": [
+                "skill1",
+                "skill2",
+                "skill3",
+                "skill4",
+                "skill5",
+                "skill6",
+                "skill7",
+                "skill8"
+            ],
+            "cv": "test.pdf"
+        },
+        {
+            "nome": "Caio",
+            "cognome": "Frana",
+            "ruolo": "MasterBlaster",
+            "eta": 22,
+            "image": "/image/tizio.jpg",
+            "descrizione": "Sono un ragazzo di 22 anni, mi piace la musica e il cinema. Sono appassionato di tecnologia e mi piace viaggiare.",
+            "skills": [
+                "skill1",
+                "skill2",
+                "skill3",
+                "skill4",
+                "skill5",
+                "skill6",
+                "skill7",
+                "skill8"
+            ],
+            "cv": "test.pdf"
+        }
+    ]
+}

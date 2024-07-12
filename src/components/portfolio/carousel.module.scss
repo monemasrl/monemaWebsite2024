@@ -1,0 +1,132 @@
+.single {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  &__content {
+    border: 1px solid #4694d4;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 400px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+  }
+  /*   &__open {
+    transform: translateY(-100px) skew(-34deg, 10deg);
+    z-index: 100;
+    animation: slideIn 1s forwards;
+  } */
+}
+
+.monemaSlider {
+  max-width: 1300px;
+  margin: 50px auto 230px auto;
+  transform: skew(34deg, -10deg);
+}
+.details {
+  transition: all ease-in-out 0.5s;
+}
+
+.homePortfolioItem {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $blue;
+  z-index: 100;
+  overflow: hidden;
+  display: flex;
+  &__image {
+    width: 30%;
+    position: relative;
+    height: 100%;
+    img {
+      object-fit: cover;
+    }
+  }
+  &__content {
+    flex: 1;
+    color: white;
+    padding: 2rem;
+    &__close {
+      position: relative;
+      float: right;
+      opacity: 0;
+      cursor: pointer;
+      animation: paragraph 1s forwards 1.5s ease-in-out;
+    }
+    &__title {
+      overflow: hidden;
+      clear: both;
+      h3 {
+        font-weight: bolder;
+        font-size: 10rem;
+        margin: 0;
+        animation: slideIn 1s forwards 1s ease-in-out;
+        opacity: 0;
+        line-height: 1;
+      }
+    }
+    > a {
+      display: inline-block;
+      margin-top: 2rem;
+      animation: paragraph 1s forwards 3s ease-in-out;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 1rem;
+      opacity: 0;
+    }
+    p {
+      font-weight: lighter;
+      font-size: 2rem;
+      margin: 1rem 0;
+      opacity: 0;
+      animation: paragraph 1s forwards 1.5s ease-in-out;
+      span {
+        display: block;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-300px);
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes paragraph {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.keyboardScrolling {
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  opacity: 1;
+  right: 2%;
+}
+.mugScrolling {
+  position: absolute;
+  width: 300px;
+  height: 536px;
+  opacity: 0.5;
+  right: 3%;
+}

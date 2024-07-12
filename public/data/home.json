@@ -1,0 +1,48 @@
+{
+    "it": {
+        "titolo": "sito web",
+        "skills": [
+            {
+                "titolo": "E-commerce",
+                "testo": " Che la tua offerta sia rivolta ad altri rivenditori (B2B) o ai consumatori finali (B2C): Abbiamo la soluzione giusta per te.Scopri i nostri prodotti e quello che possiamo fare per il tuonegozio online.",
+                "image": "/image/ecommerce.svg",
+                "link": "index.html"
+            },
+            {
+                "titolo": "CRM/ERP",
+                "testo": "Un software gestionale deve migliorare le modalità di lavoro di un’azienda, e allo stesso tempo essere flessibile alle esigenze di chi lo usa. Utilizzando la tecnologia di Odoo siamo in grado di fare entrambe queste cose.",
+                "image": "/image/erp.svg",
+                "link": "contatti.html"
+            },
+            {
+                "titolo": "Custom",
+                "testo": "Il nostro gruppo di lavoro, per formazione, competenze ed esperienza è in grado di progettare e realizzare soluzioni software in molti ambiti. Abbiamo preso parte a progetti di Industria 4.0, innovazione digitale, sviluppo di applicazioni mobile e in modalità client-server.",
+                "image": "/image/custom.svg",
+                "link": "contatti.html"
+            }
+        ]
+    },
+    "en": {
+        "titolo": "web site",
+        "skills": [
+            {
+                "titolo": "E-commerce",
+                "testo": " Che la tua offerta sia rivolta ad altri rivenditori (B2B) o ai consumatori finali (B2C): Abbiamo la soluzione giusta per te.Scopri i nostri prodotti e quello che possiamo fare per il tuonegozio online.",
+                "image": "/image/ecommerce.svg",
+                "link": "index.html"
+            },
+            {
+                "titolo": "CRM/ERP",
+                "testo": "Un software gestionale deve migliorare le modalità di lavoro di un’azienda, e allo stesso tempo essere flessibile alle esigenze di chi lo usa. Utilizzando la tecnologia di Odoo siamo in grado di fare entrambe queste cose.",
+                "image": "/image/erp.svg",
+                "link": "contatti.html"
+            },
+            {
+                "titolo": "Custom",
+                "testo": "Il nostro gruppo di lavoro, per formazione, competenze ed esperienza è in grado di progettare e realizzare soluzioni software in molti ambiti. Abbiamo preso parte a progetti di Industria 4.0, innovazione digitale, sviluppo di applicazioni mobile e in modalità client-server.",
+                "image": "/image/custom.svg",
+                "link": "contatti.html"
+            }
+        ]
+    }
+}

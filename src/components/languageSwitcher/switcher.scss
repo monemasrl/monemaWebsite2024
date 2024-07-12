@@ -1,0 +1,63 @@
+.wrapperSwitcher {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 30px;
+}
+
+.switcher {
+  overflow: hidden;
+  height: 20px;
+  pointer-events: none;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  &__open {
+    height: auto;
+    pointer-events: all;
+  }
+  &__home {
+    color: white;
+  }
+  background-color: transparent;
+  color: black;
+  border: none;
+  text-transform: uppercase;
+  option {
+    background-color: transparent;
+  }
+}
+.icon {
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+}
+.navbar_mobile {
+  .wrapperSwitcher {
+    width: 100%;
+    align-items: center;
+    .switcher {
+      position: relative;
+      overflow: visible;
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+      pointer-events: visible;
+    }
+    .icon {
+      display: none;
+    }
+    ul {
+      li {
+        height: 30px;
+        color: white !important;
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

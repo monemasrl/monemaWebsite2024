@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  @include title();
+}
+* {
+  box-sizing: border-box;
+}
+section {
+  margin: "0 auto";
+}
+main {
+  position: relative;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.leaflet-container.leaflet-touch.leaflet-retina.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+  width: 100%;
+  height: 300px;
+}
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 400 !important;
+}
+button {
+  border-radius: 0;
+  border: none;
+  padding: 1rem 2rem;
+  margin-right: 0;
+  margin-left: auto;
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

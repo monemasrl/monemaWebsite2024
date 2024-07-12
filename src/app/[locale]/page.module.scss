@@ -1,0 +1,123 @@
+.wrapperFirst {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+
+  &__claim {
+    font-size: 3.2rem;
+    font-weight: 100;
+    line-height: 1.2;
+    grid-column: 7/9;
+    position: relative;
+    @media #{$large} {
+      font-size: 2rem;
+    }
+    @media #{$landscape} {
+      grid-column: 2/12;
+      text-align: center;
+    }
+  }
+  &__txt {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    font-weight: 200;
+    grid-column: 4/7;
+    @media #{$landscape} {
+      grid-column: 2/12;
+    }
+  }
+  &__animation {
+    grid-column: span 2;
+    width: 98%;
+    @media #{$landscape} {
+      grid-column: 2/12;
+    }
+  }
+}
+.wrapperSecond {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;
+
+  align-items: center;
+  margin: 8rem auto;
+  @media #{$landscape} {
+    margin: 4rem auto;
+  }
+  .testo {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  &__txt {
+    position: "relative";
+    grid-column: span 4;
+    font-weight: 200;
+    font-size: 2rem;
+    max-width: 600px;
+    justify-self: center;
+    @media #{$landscape} {
+      grid-column: 2/12;
+    }
+  }
+  &__animation {
+    grid-column: 4/7;
+    @media #{$landscape} {
+      grid-column: 2/12;
+      grid-row: 2/3;
+    }
+  }
+}
+.skillset {
+  margin-top: 2rem;
+}
+
+.wrapperThird {
+  position: relative;
+  margin: 7rem auto 0rem auto;
+  overflow: hidden;
+
+  h2 {
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    font-size: 11rem;
+    top: 0%;
+    left: 5%;
+    color: #d0d9e0;
+  }
+}
+.slick-list {
+  overflow: visible !important;
+}
+.thirdKeyboartWrapper {
+  position: absolute;
+  width: 30%;
+  height: 80vh;
+  opacity: 0;
+  z-index: -1;
+  animation: fade 1s 1s forwards;
+  top: 0;
+  right: 0;
+}
+.thirdMugWrapper {
+  position: absolute;
+  top: 0;
+  max-width: 540px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+  animation: fade 1s 1s forwards;
+  left: -60px;
+}

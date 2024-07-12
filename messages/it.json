@@ -1,0 +1,59 @@
+{
+    "generics": {
+        "tel": "Phone number",
+        "telNumber": "+39 123 4567890",
+        "email": "Email address",
+        "emailAddress": "info@simplesite.it",
+        "piva": "Tax code/VAT number: 1234567890",
+        "cf": "C.F.: 1234567890",
+        "sede": "Legal address",
+        "citta": "City",
+        "cittaName": "Rome",
+        "indirizzo": "Address",
+        "indirizzoName": "Via Roma",
+        "numeroCivico": "Civic number",
+        "numeroCivicoName": "123",
+        "cap": "Postal code",
+        "pec": "Certified email",
+        "pecAddress": "test@test.com",
+        "privacy": "Privacy Policy",
+        "privacyUrl": "/privacy",
+        "cookie": "Cookie Policy",
+        "cookieUrl": "/cookie",
+        "credits": "Website by",
+        "creditsUrl": "https://www.simplesite.it"
+    },
+    "Navigation": {
+        "home": {
+            "titolo": "Home",
+            "url": "/"
+        },
+        "azienda": {
+            "titolo": "Azienda",
+            "url": "/azienda"
+        },
+        "lavora_con_noi": {
+            "titolo": "Lavora con noi",
+            "url": "/lavora_con_noi"
+        },
+        "contatti": {
+            "titolo": "Contatti",
+            "url": "/#contatti"
+        }
+    },
+    "home": {
+        "titolo": "Home"
+    },
+    "FormContatti": {
+        "nome": "Nome",
+        "err_nome": "Inserire almeno 3 caratteri",
+        "cognome": "Cognome",
+        "err_cognome": "Inserire almeno 3 caratteri",
+        "email": "Email",
+        "err_email": "Inserire un indirizzo email valido",
+        "messaggio": "Messaggio",
+        "err_messaggio": "Inserire almeno 10 caratteri",
+        "success": "<h3>Messaggio inviato</h3><p>Risponderemo al messaggio nel più breve tempo possibile</p>",
+        "invia": "Invia"
+    }
+}
