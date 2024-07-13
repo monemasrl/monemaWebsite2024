@@ -1,6 +1,5 @@
 import styles from "./instagram.module.scss";
 import ImagePreload from "../loaders/imagePreLoad";
-import TitleAnimations from "../animations/titleAnimations";
 
 type Tdata = {
   data: {
@@ -30,7 +29,6 @@ export default async function InstagramPost({
 
   return (
     <div className={styles.wrapperInstagram}>
-      <TitleAnimations testo="BarbellGram" animation="letter" />
       <ul className={styles.wrapperInstagram__list}>
         {dataRes &&
           dataRes.data?.map(
