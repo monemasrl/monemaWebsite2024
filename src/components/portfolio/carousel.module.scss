@@ -26,6 +26,8 @@
   ul {
     li {
       margin: 1rem 0;
+      @include portfolio();
+      font-weight: 400;
     }
   }
 }
@@ -98,8 +100,10 @@
       overflow: hidden;
       clear: both;
       h3 {
+        @include portfolio();
         font-weight: bolder;
-        font-size: 8vw;
+        text-transform: uppercase;
+        font-size: 5vw;
         margin: 0;
         animation: slideIn 1s forwards 1s ease-in-out;
         opacity: 0;

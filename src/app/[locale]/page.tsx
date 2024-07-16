@@ -12,6 +12,8 @@ import Skills from "@/components/skills/skills";
 import Portfolio from "@/components/portfolio/portfolio";
 import Form from "@/components/form/netlifyForm";
 import ScrollingElement from "@/components/animations/scrollingElement";
+import Splash from "@/components/splash/splash";
+
 /**
  * PAGINA
  * Utilizzare le pagine per fetchare i dati e passarli ai componenti
@@ -36,6 +38,7 @@ export default async function Home({
   };
   return (
     <main className={style.main}>
+      <Splash />
       <HeroVideo URL={"/video/video.mp4"} data={HeroDataLang} />
       <ScrollingElement
         from="22%"

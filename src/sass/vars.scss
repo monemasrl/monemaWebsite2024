@@ -20,7 +20,9 @@ $pageSubtitle: 32px;
 @mixin title() {
   font-family: var(--font-heebo);
 }
-
+@mixin portfolio() {
+  font-family: var(--font-silkscreen);
+}
 /*MEDIA QUERY*/
 $phone: "only screen and (max-width : 460px)";
 $tablet: "only screen and (max-width : 720px)";

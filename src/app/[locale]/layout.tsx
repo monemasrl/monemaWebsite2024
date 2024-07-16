@@ -1,4 +1,4 @@
-import { Heebo } from "next/font/google";
+import { Heebo, Press_Start_2P } from "next/font/google";
 import "@/sass/all.scss";
 import SmoothScrolling from "@/components/scroll/smoothScrolling";
 import JsonldMetaData from "@/components/metaData/jsonldmetadata";
@@ -13,6 +13,11 @@ const heebo = Heebo({
   subsets: ["latin"],
   weight: ["100", "200", "400", "500", "700", "900"],
   variable: "--font-heebo",
+});
+const silkScreen = Press_Start_2P({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-silkscreen",
 });
 
 export function generateStaticParams() {
@@ -45,7 +50,7 @@ export default async function RootLayout({
         {/* COMPONENTE PER INSERIRE I META JSONLD PER GOOGLE  */}
         <JsonldMetaData metadata={meta} />
       </head>
-      <body className={heebo.variable}>
+      <body className={`${heebo.variable} ${silkScreen.variable}`}>
         <CookieConsentBanner />
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Nav />
