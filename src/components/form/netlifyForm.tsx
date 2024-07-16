@@ -102,54 +102,58 @@ function Form() {
 
   return (
     <form
-      className={`${style.form} ${style.form__lavora}`}
+      className={`${style.form} ${style.form__contatti}`}
       name="contatti"
       onSubmit={handleFormSubmit}
     >
       <SuccessMessage status={status} />
       <input type="hidden" name="form-name" value="contatti" />
+      <p className={style.form__contatti__txt}>
+        Hai bisogno di fare una valutazione, vuoi sapere quanto potrebbe costare
+        la realizzazione del tuo progetto? Contattaci!
+      </p>
       <p>
         {" "}
-        <label htmlFor="nome">{t("nome")}</label> <br />
         <input
           onChange={(e) => {
             setNome(e.target.value);
           }}
           type="text"
+          placeholder="Nome"
           name="nome"
           id="nome"
           required
         />
       </p>
       <p>
-        <label htmlFor="cognome">{t("cognome")}</label> <br />
         <input
           onChange={(e) => {
             setCognome(e.target.value);
           }}
           type="text"
           name="cognome"
+          placeholder="Cognome"
           id=""
           required
         />
       </p>
       <p>
-        <label htmlFor="youremail">{t("email")}</label> <br />
         <input
           onChange={(e) => setMail(e.target.value)}
           type="email"
           name="email"
+          placeholder="Email"
           id="youremail"
           required
         />
       </p>
 
       <p>
-        <label htmlFor="yourmessage">{t("messaggio")}</label> <br />
         <textarea
           onChange={(e) => {
             setMessaggio(e.target.value);
           }}
+          placeholder="Messaggio"
           name="message"
           id="yourmessage"
           required

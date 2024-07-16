@@ -16,16 +16,19 @@
   }
 }
 
-form.form {
+.form__contatti {
   max-width: 1000px;
   width: 100%;
   grid-column: span 3;
-  background-color: $blue;
   padding: 1rem 2rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
   color: white;
   @media #{$phone} {
     padding: 0rem;
+  }
+  &__txt {
+    color: black;
+    text-align: center;
   }
   input,
   textarea,
@@ -36,6 +39,7 @@ form.form {
     background-color: rgb(239, 239, 239);
     border-radius: 0;
     outline: none;
+    padding-left: 1rem;
   }
   input {
     height: 40px;
