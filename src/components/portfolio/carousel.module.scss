@@ -22,6 +22,12 @@
 .monemaSlider {
   max-width: 1300px;
   margin: 50px auto 230px auto;
+  padding: 2rem;
+  ul {
+    li {
+      margin: 1rem 0;
+    }
+  }
 }
 .details {
   transition: all ease-in-out 0.5s;
@@ -93,13 +99,13 @@
       clear: both;
       h3 {
         font-weight: bolder;
-        font-size: 10rem;
+        font-size: 8vw;
         margin: 0;
         animation: slideIn 1s forwards 1s ease-in-out;
         opacity: 0;
         line-height: 1;
         word-break: break-word;
-        @media #{$landscape} {
+        @media #{$large} {
           font-size: 3rem;
         }
         @media #{$phone} {
@@ -160,4 +166,15 @@
   height: 536px;
   opacity: 0.5;
   right: 3%;
+}
+.portfolioImage {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  right: 50px;
+  img {
+    object-fit: cover;
+  }
 }

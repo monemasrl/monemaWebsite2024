@@ -60,6 +60,22 @@ function Portfolio() {
 
   return (
     <>
+      {currentImage && (
+        <motion.div
+          className={style.portfolioImage}
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.2,
+          }}
+        >
+          <Image src={currentImage} alt="Picture of the author" layout="fill" />
+        </motion.div>
+      )}
       <motion.div
         className={style.keyboardScrolling}
         style={{
@@ -67,7 +83,7 @@ function Portfolio() {
         }}
       >
         <Image
-          src={currentImage || "/image/keyboard.svg"}
+          src={"/image/keyboard.svg"}
           alt="Picture of the author"
           layout="fill"
         />
@@ -92,17 +108,19 @@ function Portfolio() {
         <ul>
           {data.map((item, index) => {
             return (
-              <li
-                key={index}
-                onClick={() => setDataFromSlide(item.title)}
-                onMouseOver={() => setCurrentImage(item.image)}
-                onMouseOut={() => setCurrentImage(null)}
-              >
-                <TitleColorAnimation
-                  title={item.title}
-                  color1="#d0d9e0"
-                  color2="#28375d"
-                />
+              <li key={index}>
+                <div
+                  style={{ display: "inline-block" }}
+                  onClick={() => setDataFromSlide(item.title)}
+                  onMouseOver={() => setCurrentImage(item.image)}
+                  onMouseOut={() => setCurrentImage(null)}
+                >
+                  <TitleColorAnimation
+                    title={item.title}
+                    color1="#4694D4"
+                    color2="#28375d"
+                  />
+                </div>
               </li>
             );
           })}

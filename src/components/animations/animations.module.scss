@@ -75,27 +75,21 @@
 }
 .titolColorAnimation {
   position: relative;
-  margin: 1rem 0;
-  ::before {
-    top: 0;
-    left: -10px;
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background-color: $blue;
-  }
-  h2 {
+
+  h2,
+  h3 {
     position: relative;
     margin: 0;
     line-height: 1;
-    font-size: 8rem;
+    font-size: 7rem;
     top: 0%;
-    left: 5%;
+
     color: #d0d9e0;
     text-transform: uppercase;
     display: inline-block;
-
+    @media #{$landscape} {
+      font-size: 4rem;
+    }
     &:hover {
       cursor: pointer;
       span {

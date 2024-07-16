@@ -13,10 +13,10 @@ function TitleColorAnimation({
 }) {
   return (
     <div className={style.titolColorAnimation}>
-      <h2 style={{ color: color1 }}>
+      <h3 style={{ color: color1 }}>
         {title}
         <span style={{ color: color2 }}>{title}</span>
-      </h2>
+      </h3>
     </div>
   );
 }
