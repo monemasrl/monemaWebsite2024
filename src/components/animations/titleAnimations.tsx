@@ -1,6 +1,6 @@
 "use client";
-import React from "react";
-import { delay, easeInOut, motion } from "framer-motion";
+
+import { motion } from "framer-motion";
 import style from "./animations.module.scss";
 import { easeIn } from "framer-motion/dom";
 

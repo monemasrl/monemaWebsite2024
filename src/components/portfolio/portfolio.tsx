@@ -1,21 +1,12 @@
 "use client";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import style from "./carousel.module.scss";
-import SingleSlide from "./singleslide";
-import { useState, useRef, use } from "react";
+import { useState, useRef } from "react";
 import { createPortal } from "react-dom";
-import {
-  useMotionTemplate,
-  useScroll,
-  useTransform,
-  motion,
-  useInView,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import Scheda from "./scheda";
 import Image from "next/image";
-
+import TitleColorAnimation from "../animations/titleColorAnimation";
 const data = [
   {
     image: "/image/portfolio/irma.jpg",
@@ -54,42 +45,9 @@ const data = [
 ];
 
 function Portfolio() {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
   const wrapper = useRef(null);
   const [dataFromSlide, setDataFromSlide] = useState<string | null>(null);
+  const [currentImage, setCurrentImage] = useState<string | null>(null);
   const { scrollYProgress } = useScroll({
     target: wrapper,
     offset: ["start end", "start start"],
@@ -97,7 +55,6 @@ function Portfolio() {
   const progress = useTransform(scrollYProgress, [0, 1], ["20%", "0%"]);
 
   const keyboardScroll = useTransform(scrollYProgress, [0, 1], [0, 210]);
-  const trasizioneCarouselIniziale = useMotionTemplate`translate(0%,${progress}) skew(34deg, -10deg)`;
 
   const dataScheda = data.find((item) => item.title === dataFromSlide);
 
@@ -110,10 +67,9 @@ function Portfolio() {
         }}
       >
         <Image
-          src="/image/keyboard.svg"
+          src={currentImage || "/image/keyboard.svg"}
           alt="Picture of the author"
           layout="fill"
-          quality={100}
         />
       </motion.div>
 
@@ -131,20 +87,26 @@ function Portfolio() {
         ref={wrapper}
         style={{
           opacity: 1,
-          transform: trasizioneCarouselIniziale,
         }}
       >
-        <Slider {...settings}>
-          {data.map((item, index) => (
-            <SingleSlide
-              key={item.title}
-              image={item.image}
-              title={item.title}
-              setDataFromSlide={setDataFromSlide}
-              dataFromSlide={dataFromSlide}
-            />
-          ))}
-        </Slider>
+        <ul>
+          {data.map((item, index) => {
+            return (
+              <li
+                key={index}
+                onClick={() => setDataFromSlide(item.title)}
+                onMouseOver={() => setCurrentImage(item.image)}
+                onMouseOut={() => setCurrentImage(null)}
+              >
+                <TitleColorAnimation
+                  title={item.title}
+                  color1="#d0d9e0"
+                  color2="#28375d"
+                />
+              </li>
+            );
+          })}
+        </ul>
       </motion.div>
     </>
   );

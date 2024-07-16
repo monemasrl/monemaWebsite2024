@@ -32,14 +32,14 @@
     font-weight: 200;
     grid-column: 4/7;
     @media #{$landscape} {
-      grid-column: 2/12;
+      grid-column: 2/13;
     }
   }
   &__animation {
     grid-column: span 2;
     width: 98%;
     @media #{$landscape} {
-      grid-column: 2/12;
+      grid-column: 2/13;
     }
   }
 }
@@ -66,13 +66,13 @@
     max-width: 600px;
     justify-self: center;
     @media #{$landscape} {
-      grid-column: 2/12;
+      grid-column: 2/13;
     }
   }
   &__animation {
     grid-column: 4/7;
     @media #{$landscape} {
-      grid-column: 2/12;
+      grid-column: 2/13;
       grid-row: 2/3;
     }
   }
@@ -85,16 +85,6 @@
   position: relative;
   margin: 7rem auto 0rem auto;
   overflow: hidden;
-
-  h2 {
-    display: inline-block;
-    margin: 0;
-    position: absolute;
-    font-size: 11rem;
-    top: 0%;
-    left: 5%;
-    color: #d0d9e0;
-  }
 }
 .slick-list {
   overflow: visible !important;

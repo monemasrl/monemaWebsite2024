@@ -71,7 +71,10 @@ function Scheda({
             <div className={style.homePortfolioItem__content__title}>
               <h3>{data.title}</h3>
             </div>
-            <p dangerouslySetInnerHTML={{ __html: data.description }} />
+            <p
+              className={style.homePortfolioItem__content__description}
+              dangerouslySetInnerHTML={{ __html: data.description }}
+            />
             <p>
               <span>SKILLS</span>
               {data.skills}
