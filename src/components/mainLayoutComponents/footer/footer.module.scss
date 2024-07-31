@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding: 4rem 2rem;
-  justify-items: center;
+  justify-items: flex-start;
   align-items: end;
   font-size: 19px;
   gap: 2rem;
@@ -24,7 +24,7 @@
     justify-items: flex-start;
   }
   &__first {
-    grid-column: 2/3;
+    grid-column: 3/4;
     @media #{$landscape} {
       grid-column: 1/2;
     }
@@ -33,9 +33,13 @@
     }
   }
   &__fourth {
-    justify-self: center;
+    justify-self: flex-start;
     h3 {
       margin-bottom: 0.5rem;
     }
   }
+}
+.irmaFooter {
+  font-weight: bold;
+  color: red;
 }

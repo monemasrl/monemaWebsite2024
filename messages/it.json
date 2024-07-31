@@ -55,5 +55,14 @@
         "err_messaggio": "Inserire almeno 10 caratteri",
         "success": "<h3>Messaggio inviato</h3><p>Risponderemo al messaggio nel più breve tempo possibile</p>",
         "invia": "Invia"
+    },
+    "Footer": {
+        "col1": {
+            "nome": "monema srl",
+            "piva": "IT02350530974",
+            "tel": "+390574870600",
+            "mail": "info@monema.it",
+            "orario": "Lun-Ven 9:00-13:00 / 14:00-18:00"
+        }
     }
 }

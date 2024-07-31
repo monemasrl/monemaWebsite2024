@@ -30,29 +30,24 @@ function Footer() {
   return (
     <footer className={style.footer}>
       <div className={style.footer__first}>
-        <Image src="/image/vtslogo.jpg" width={180} height={96} alt="logo" />
+        <Image src="/image/logobianco.svg" width={223} height={27} alt="logo" />
         <ul>
-          <li>{t("col1.piva")}</li>
-          <li>{t("col1.rea")}</li>
+          <li>{t("col1.nome")}</li>
+          <li>Piva: {t("col1.piva")}</li>
           <li>
-            {t("col1.pec")}{" "}
-            <a href={"mailto:" + t("col1.pecURL")}>{t("col1.pecURL")}</a>
+            Mail:
+            <br />
+            <a href={"mailto:" + t("col1.mail")}>{t("col1.mail")}</a>
+          </li>
+          <li>
+            Orario:
+            <br />
+            {t("col1.orario")}
           </li>
         </ul>
       </div>
+
       <ul className={style.footer__second}>
-        <li>VTS</li>
-        <li> {t("col2.indirizzo")} </li>
-        <li>
-          <a href={"tel:" + t("col2.tel")}>tel:{t("col2.tel")}</a>
-        </li>
-        <li>
-          <a href={"mailto:" + t("col2.email")}>{t("col2.email")}</a>
-        </li>
-        <li>{t("col2.subsidiary")}</li>
-        <li>{t("col2.subsidiary_indirizzo")}</li>
-      </ul>
-      <ul className={style.footer__third}>
         {navigation.nav.map((item, index) => (
           <li
             className={`${pathN.includes(item.url) && style.activeLink}`}
@@ -67,15 +62,8 @@ function Footer() {
         ))}
         <li>Privacy Policy</li>
         <li>Cookie Policy</li>
+        <li className={style.irmaFooter}>Progetto IRMA</li>
       </ul>
-      <div className={style.footer__fourth}>
-        <h3>{t("col4.seguici")}</h3>
-        <div className={style.socialIcons}>
-          <Image src="/image/what.svg" width={50} height={50} alt="logo" />
-          <Image src="/image/link.svg" width={50} height={50} alt="logo" />
-          <Image src="/image/instagram.svg" width={50} height={50} alt="logo" />
-        </div>
-      </div>
     </footer>
   );
 }

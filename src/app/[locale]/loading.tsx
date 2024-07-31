@@ -1,3 +1,5 @@
-export default function Loading() {
-  return <div>loading</div>;
+import Splash from "@/components/splash/splash";
+function Loading() {
+  return <Splash />;
 }
+export default Loading;

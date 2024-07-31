@@ -9,6 +9,7 @@ import { unstable_setRequestLocale, getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import CookieConsentBanner from "@/components/cookieConsent/cookieConsent";
 import Footer from "@/components/mainLayoutComponents/footer/footer";
+import Splash from "@/components/splash/splash";
 const heebo = Heebo({
   subsets: ["latin"],
   weight: ["100", "200", "400", "500", "700", "900"],
@@ -53,6 +54,7 @@ export default async function RootLayout({
       <body className={`${heebo.variable} ${silkScreen.variable}`}>
         <CookieConsentBanner />
         <NextIntlClientProvider messages={messages} locale={locale}>
+          <Splash />
           <Nav />
           <SmoothScrolling>{children}</SmoothScrolling>
           <Footer />

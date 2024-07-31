@@ -12,7 +12,6 @@ import Skills from "@/components/skills/skills";
 import Portfolio from "@/components/portfolio/portfolio";
 import Form from "@/components/form/netlifyForm";
 import ScrollingElement from "@/components/animations/scrollingElement";
-import Splash from "@/components/splash/splash";
 
 /**
  * PAGINA
@@ -28,17 +27,11 @@ export default async function Home({
 }) {
   unstable_setRequestLocale(locale);
 
-  const t = await getTranslations("generics");
   const HeroDataLang = heroData[locale as keyof typeof heroData];
   const HomeDataLang = homeData[locale as keyof typeof homeData];
-  const address = {
-    city: t("cittaName"),
-    street: t("indirizzoName"),
-    number: t("numeroCivicoName"),
-  };
+
   return (
     <main className={style.main}>
-      <Splash />
       <HeroVideo URL={"/video/video.mp4"} data={HeroDataLang} />
       <ScrollingElement
         from="22%"
